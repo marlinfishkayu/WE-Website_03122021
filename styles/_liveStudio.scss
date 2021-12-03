@@ -730,21 +730,16 @@ svg.gal-frame {
     #sync2 .owl-stage-outer {
         max-width: 700px;
         margin: auto;
+        padding: 0px 20px 50px;
     }
-    // #sync1 .active .gal-img {
-    //     padding-left: 24px;
-    //     padding-right: 24px;
-    // }
     #sync1 .gal-img {
-        // padding: 24px 48px;
         width: 100%;
-        // padding: 33px 13px;
     }
     #sync1.owl-theme .owl-prev {
-        left: -10px;
+        left: -27px!important;
     }
     #sync1.owl-theme .owl-next {
-        right: -10px;
+        right: -27px!important;
     }
     #sync1.owl-carousel .owl-stage-outer {
         overflow: inherit!important;
