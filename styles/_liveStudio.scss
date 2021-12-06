@@ -17,10 +17,10 @@
     height: auto;
 }
 #liveStudio .hero-header {
-    height: 600px;
+    height: 500px;
 }
 #liveStudio .hero-header-bkg {
-    height: 600px;
+    height: 500px;
 }
 #liveStudio .studio-slide-bkg{
     height: 300px;
@@ -558,7 +558,7 @@ svg.gal-frame {
       opacity: 1;
     }
     .owl-stage {
-        height: 80px;
+        // height: 80px;
         margin: auto;
         display: flex;
         width: inherit!important;
@@ -566,9 +566,7 @@ svg.gal-frame {
         overflow-y: hidden;
     }
     .owl-stage-outer {
-        // overflow-x: scroll;
-        padding: 0 100px;
-        padding: 0 20px;
+        padding: 0 20px 85px;
     }
     
   }
@@ -612,8 +610,11 @@ svg.gal-frame {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     #liveStudio{
-        .hero-header-bkg{
-            height: 600px;
+        .hero-header {
+            height: 530px;
+        }
+        .hero-header-bkg {
+            height: 530px;
         }
         .studio-slide-bkg{
             height: 820px;
@@ -730,7 +731,7 @@ svg.gal-frame {
     #sync2 .owl-stage-outer {
         max-width: 700px;
         margin: auto;
-        padding: 0px 20px 100px;
+        padding: 0px 20px 160px;
     }
     #sync1 .gal-img {
         width: 100%;
@@ -781,12 +782,6 @@ svg.gal-frame {
     #liveStudio .showless-wrap{
         height: auto;
     }
-    // #sync1.owl-theme .owl-prev {
-    //     left: -30px!important;
-    // }
-    // #sync1.owl-theme .owl-next {
-    //     right: -30px!important;
-    // }
  }
  // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1091px) {

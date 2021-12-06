@@ -6628,11 +6628,11 @@ select.form-control::-ms-expand {
 }
 
 #liveStudio .hero-header {
-  height: 600px;
+  height: 500px;
 }
 
 #liveStudio .hero-header-bkg {
-  height: 600px;
+  height: 500px;
 }
 
 #liveStudio .studio-slide-bkg {
@@ -7291,7 +7291,6 @@ svg.gal-frame {
 }
 
 #sync2 .owl-stage {
-  height: 80px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7302,8 +7301,7 @@ svg.gal-frame {
 }
 
 #sync2 .owl-stage-outer {
-  padding: 0 100px;
-  padding: 0 20px;
+  padding: 0 20px 85px;
 }
 
 .owl-theme .owl-nav {
@@ -7341,8 +7339,11 @@ svg.gal-frame {
 }
 
 @media (min-width: 768px) {
+  #liveStudio .hero-header {
+    height: 530px;
+  }
   #liveStudio .hero-header-bkg {
-    height: 600px;
+    height: 530px;
   }
   #liveStudio .studio-slide-bkg {
     height: 820px;
@@ -7454,7 +7455,7 @@ svg.gal-frame {
   #sync2 .owl-stage-outer {
     max-width: 700px;
     margin: auto;
-    padding: 0px 20px 100px;
+    padding: 0px 20px 160px;
   }
   #sync1 .gal-img {
     width: 100%;
