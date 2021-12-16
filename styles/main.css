@@ -7257,6 +7257,11 @@ svg.gal-frame {
   margin: auto;
 }
 
+.thumb-wrap {
+  margin: 20px;
+  padding: 0 10px 85px;
+}
+
 #sync2 .owl-carousel {
   height: 80px !important;
   padding: 10px;
@@ -7295,13 +7300,8 @@ svg.gal-frame {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: inherit !important;
   overflow-x: scroll;
   overflow-y: hidden;
-}
-
-#sync2 .owl-stage-outer {
-  padding: 0 20px 85px;
 }
 
 .owl-theme .owl-nav {
@@ -7453,7 +7453,6 @@ svg.gal-frame {
     overflow: inherit;
   }
   #sync2 .owl-stage-outer {
-    max-width: 700px;
     margin: auto;
     padding: 0px 20px 180px;
   }
@@ -7503,6 +7502,9 @@ svg.gal-frame {
     width: 497px;
   }
   #liveStudio .showless-wrap {
+    height: auto;
+  }
+  #liveStudio .livestudio-sec3 .studio-bottom-bkg {
     height: auto;
   }
 }
