@@ -7507,6 +7507,9 @@ svg.gal-frame {
   #liveStudio .livestudio-sec3 .studio-bottom-bkg {
     height: auto;
   }
+  .thumb-wrap {
+    padding: inherit;
+  }
 }
 
 @media (min-width: 1091px) {

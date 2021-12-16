@@ -788,6 +788,10 @@ svg.gal-frame {
     #liveStudio .livestudio-sec3 .studio-bottom-bkg{
         height: auto;
     }
+    .thumb-wrap {
+        // margin: inherit;
+        padding: inherit;
+    }
  }
  // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1091px) {
