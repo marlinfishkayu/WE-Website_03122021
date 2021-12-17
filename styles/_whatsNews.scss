@@ -841,7 +841,6 @@
     #news-carousel #slider-area .update-wrapper::after {
         bottom: -59%;
     }
-    
     #news-carousel .update-img {
         padding-top: 18px;
     }
@@ -1134,6 +1133,9 @@
         .text-gold-btn:hover::after {
             right: -50%;
         }
+        ul li:nth-child(odd) .text-gold-btn:hover::after {
+            right: 0%;
+        }
         .right-frame {
             .text-gold-btn{
                 &:after{
@@ -1158,6 +1160,7 @@
     #news-carousel .update-detail-btn:hover::after{
         right: 40%;
     }
+   
     #news-carousel .update-img:after {
         content: '';
         position: absolute;
