@@ -7506,6 +7506,9 @@ svg.gal-frame {
   }
   #liveStudio .livestudio-sec3 .studio-bottom-bkg {
     height: auto;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
   }
   .thumb-wrap {
     padding: inherit;

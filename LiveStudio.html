@@ -1236,13 +1236,31 @@
                     sync2.find(".owl-item").eq(0).addClass("current");
                 })
                 .owlCarousel({
-                center:false,
-                    items: 8,
+                    responsive:{
+                        0:{
+                            items: 4,
+                            mouseDrag: false,
+                        },
+                        480:{
+                            items: 4,
+                            mouseDrag: true,
+                        },
+                        768:{
+                            items: 6,
+                            mouseDrag: true,
+                        },
+                        1400:{
+                            items: 8,
+                            mouseDrag: true,
+                        }
+                    },
+                    center:false,
+                    // items: 8,
                     dots: false,
                     nav: false,
                     smartSpeed: 200,
                     slideSpeed: 500,
-                    mouseDrag: false,
+                    // mouseDrag: false,
                     slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
                     responsiveRefreshRate: 100
                 }).on('changed.owl.carousel', syncPosition2);
