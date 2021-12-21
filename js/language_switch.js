@@ -45,8 +45,12 @@ $(function() {
   //first check for stored language in localStorage i.e. fetch data from localStorage
   let stored_lang = localStorage.getItem("stored_lang");
   let lang = "EN";
+  // valid language conditions to array
+  const valid = ["EN", "SC", "TC"];
+
+
   //if any then translate page accordingly
-  if (stored_lang != null && stored_lang != undefined) {
+  if (stored_lang != null && stored_lang == valid) {
     //  set the current language to selected language
     lang = stored_lang;
     
