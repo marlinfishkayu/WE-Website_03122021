@@ -49,15 +49,30 @@ $(function() {
   const valid = ["EN", "SC", "TC"];
 
 
+  // //if any then translate page accordingly
+  // if (stored_lang != null && stored_lang == valid) {
+  //   //  set the current language to selected language
+  //   lang = stored_lang;
+    
+  // } else  {
+  //   //  set english to default language
+  //   localStorage.setItem("stored_lang", "EN");
+  // }
+
+
   //if any then translate page accordingly
-  if (stored_lang != null && stored_lang == valid) {
+  if (stored_lang != null && stored_lang != undefined) {
     //  set the current language to selected language
     lang = stored_lang;
     
-  } else {
+  } else  {
     //  set english to default language
     localStorage.setItem("stored_lang", "EN");
   }
+  
+
+
+  
   translateLang(lang);
 
   $('.translate').click(function() {
