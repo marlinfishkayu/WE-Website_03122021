@@ -65,7 +65,7 @@
 #slider-area {
     position: relative;
     &::after{
-        height: 100px;
+        height: 50px;
          z-index: 0;
     }
 }
@@ -98,7 +98,7 @@
     }
 }
 #slider-area .owl-dots {
-    bottom: -2%;
+    bottom: -8%;
     width: 100%;
     text-align: center;
 }
@@ -151,7 +151,7 @@
         left: 0;
         bottom: 0;
         height: 100%;
-        width: 100px;
+        width: 0px;
         background: linear-gradient(90deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
     }
     &::before{
@@ -161,7 +161,7 @@
         right: 0;
         bottom: 0;
         height: 100%;
-        width: 100px;
+        width: 0px;
         background: linear-gradient(270deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
     }
 }

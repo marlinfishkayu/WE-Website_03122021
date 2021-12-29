@@ -2313,7 +2313,7 @@ footer {
 }
 
 #slider-area::after {
-  height: 100px;
+  height: 50px;
   z-index: 0;
 }
 
@@ -2355,7 +2355,7 @@ footer {
 }
 
 #slider-area .owl-dots {
-  bottom: -2%;
+  bottom: -8%;
   width: 100%;
   text-align: center;
 }
@@ -2419,7 +2419,7 @@ footer {
   left: 0;
   bottom: 0;
   height: 100%;
-  width: 100px;
+  width: 0px;
   background: -webkit-gradient(linear, left top, right top, from(#060B1A), to(rgba(0, 15, 36, 0)));
   background: linear-gradient(90deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
 }
@@ -2431,7 +2431,7 @@ footer {
   right: 0;
   bottom: 0;
   height: 100%;
-  width: 100px;
+  width: 0px;
   background: -webkit-gradient(linear, right top, left top, from(#060B1A), to(rgba(0, 15, 36, 0)));
   background: linear-gradient(270deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
 }
