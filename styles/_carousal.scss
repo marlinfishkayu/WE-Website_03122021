@@ -98,7 +98,7 @@
     }
 }
 #slider-area .owl-dots {
-    bottom: -8%;
+    bottom: -13%;
     width: 100%;
     text-align: center;
 }
@@ -649,16 +649,7 @@
 @media (min-width: 768px) {
     #diamondCarousel .active-img {
         width: 400px;
-        // padding-right: 30px;
     }
-    // #diamondCarousel .active-img:nth-child(0),
-    // #diamondCarousel .active-img:nth-child(1){
-    //     padding-right: 30px;
-    // }
-    // #diamondCarousel .active-img:last-child{
-    //     padding-right: 0px;
-    //     padding-left: 30px;
-    // }
     #diamondCarousel .active-img:after {
         left: 2.5%;
     }
