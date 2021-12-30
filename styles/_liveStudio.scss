@@ -534,7 +534,7 @@ svg.gal-frame {
 
 .thumb-wrap {
     margin: 0 20px 20px;
-    padding: 0 10px 85px;
+    padding: 0 0px 85px;
 }
   #sync2 {
     .owl-carousel {
@@ -612,8 +612,8 @@ svg.gal-frame {
         margin: inherit;
     }
     #sync2.owl-carousel .owl-item img {
-        height: 90px !important;
-        width: 90px !important;
+        height: 80px !important;
+        width: 80px !important;
     }
     #sync1.owl-theme .owl-next, #sync1.owl-theme .owl-prev {
         height: 55px !important;
