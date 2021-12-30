@@ -3007,6 +3007,15 @@ footer {
   }
 }
 
+@media (min-width: 642px) {
+  #slider-area::after {
+    height: 20px;
+  }
+  #slider-area .owl-dots {
+    bottom: -20%;
+  }
+}
+
 @media (min-width: 768px) {
   #diamondCarousel .active-img {
     width: 400px;

@@ -645,6 +645,18 @@
     }
     
 }
+
+// iPhone 13
+@media (min-width: 642px) {
+    #slider-area::after{
+        height: 20px;
+    }
+    #slider-area .owl-dots {
+        bottom: -20%;
+    }
+}
+
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     #diamondCarousel .active-img {
@@ -769,9 +781,6 @@
     #intdexWhatsNews .section-container {
         padding-bottom: 4rem;
     }
-    // #slider-area .slide-gradient::after, #slider-area .slide-gradient::before{
-    //     width: 200px;
-    // }
     #slider-area .mobile-portrait{
         display: none;
     }
