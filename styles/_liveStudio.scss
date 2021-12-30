@@ -498,7 +498,7 @@
         transform: rotate(180deg);
     }
     .gal-img {
-        padding: 38px 30px;
+        padding: 21px 60px;
         width: 100%;
     }
     .owl-item{
@@ -515,8 +515,8 @@ svg.gal-frame {
 }
 #sync1.owl-theme .owl-next, 
 #sync1.owl-theme .owl-prev {
-    height: 50px!important;
-    width: 50px!important;
+    height: 55px!important;
+    width: 55px!important;
 }
 
 #sync1.owl-theme .owl-next:hover, 
@@ -526,13 +526,13 @@ svg.gal-frame {
 #sync2.owl-carousel .owl-item img {
     background: transparent 50% no-repeat;
     background-size: cover;
-    height: 60px!important;
-    width: 60px!important;
+    height: 90px!important;
+    width: 90px!important;
     margin: auto;
 }
 
 .thumb-wrap {
-    margin: 20px;
+    margin: 0 20px 20px;
     padding: 0 10px 85px;
 }
   #sync2 {
@@ -617,7 +617,7 @@ svg.gal-frame {
             height: 530px;
         }
         .hero-header-bkg {
-            height: 530px;
+            height: 529px;
         }
         .studio-slide-bkg{
             height: 820px;
@@ -737,16 +737,20 @@ svg.gal-frame {
         padding: 0px 20px 180px;
     }
     #sync1 .gal-img {
+        padding: 30px 38px;
         width: 100%;
     }
     #sync1.owl-theme .owl-prev {
-        left: -27px!important;
+        left: 14px!important;
     }
     #sync1.owl-theme .owl-next {
-        right: -27px!important;
+        right: 14px!important;
     }
     #sync1.owl-carousel .owl-stage-outer {
         overflow: inherit!important;
+    }
+    .thumb-wrap {
+        margin: 20px;
     }
 }   
 
@@ -792,8 +796,22 @@ svg.gal-frame {
         overflow: hidden;
     }
     .thumb-wrap {
-        // margin: inherit;
         padding: inherit;
+    }
+    #sync2.owl-carousel .owl-item img {
+        height: 60px!important;
+        width: 60px!important;
+    }
+    #sync1.owl-theme .owl-prev {
+        left: -15px!important;
+    }
+    #sync1.owl-theme .owl-next {
+        right: -15px!important;
+    }
+    #sync1.owl-theme .owl-next, 
+    #sync1.owl-theme .owl-prev {
+        height: 60px!important;
+        width: 60px!important;
     }
  }
  // Extra large devices (large desktops, 1200px and up)

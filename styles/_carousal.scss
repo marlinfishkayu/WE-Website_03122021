@@ -8,7 +8,7 @@
     background-position: 50% 50%;
 }
 #slider-area .slide {
-    height: 60vh;
+    height: 45vh;
     img{
         background-size: cover;
         -o-object-fit: cover;
@@ -134,11 +134,23 @@
         bottom: -1px;
         left: 0;
         width: 100%;
-        height: 100px;
+        height: 200px;
         z-index: 0;
         background: #011b3e;
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 27, 62, 0)), to(#000f24));
         background: linear-gradient(0deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        height: 20vh;
+        z-index: 1;
+        background: #011b3e;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(1, 27, 62, 0)), to(#000f24));
+        background: linear-gradient(180deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
     }
 }
 #slider-area .slide-gradient{
@@ -766,9 +778,9 @@
     #intdexWhatsNews .section-container {
         padding-bottom: 4rem;
     }
-    #slider-area .slide-gradient::after, #slider-area .slide-gradient::before{
-        width: 200px;
-    }
+    // #slider-area .slide-gradient::after, #slider-area .slide-gradient::before{
+    //     width: 200px;
+    // }
     #slider-area .mobile-portrait{
         display: none;
     }
@@ -779,7 +791,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     #slider-area .slide{
-        height: 70vh;
+        height: 90vh;
     }
     #intdexWhatsNews .news-item-img {
         width: 358px;
@@ -856,7 +868,7 @@
     #slider-area {
         position: relative;
         &::after{
-            height: 250px;
+            height: 50px;
         }
         .slide {
             overflow: hidden;
@@ -916,9 +928,9 @@
 }
 @media (orientation: landscape) and (min-width: 1200px) {
     #slider-area .slide {
-        max-width: 1920px;
+        // max-width: 1920px;
         margin: 0 auto;
-        max-height: 1080px;
+        // max-height: 1080px;
     }
     #slider-area .mobile-portrait{
         display: none;
