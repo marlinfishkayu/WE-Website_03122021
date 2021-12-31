@@ -861,6 +861,10 @@
         height: 150px;
         overflow: hidden;
     }
+    #diamondCarousel .active-img:after {
+        -webkit-transform: scale(0.85);
+        transform: scale(0.85);
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)

@@ -3224,6 +3224,10 @@ footer {
     height: 150px;
     overflow: hidden;
   }
+  #diamondCarousel .active-img:after {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
 }
 
 @media (min-width: 1200px) {
