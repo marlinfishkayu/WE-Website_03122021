@@ -42,37 +42,24 @@ function translateLang(lang) {
 }
 
 $(function() {
-  //first check for stored language in localStorage i.e. fetch data from localStorage
-  let stored_lang = localStorage.getItem("stored_lang");
-  let lang = "EN";
-  // valid language conditions to array
-  const valid = ["EN", "SC", "TC"];
+  let stored_lang = localStorage.getItem('stored_lang');
+  //check current language 
+  switch (stored_lang){
+    case 'EN': localStorage.setItem("stored_lang", "EN");
+    break;
+    case 'TC': localStorage.setItem("stored_lang", "TC");
+    break;
+    case 'SC': localStorage.setItem("stored_lang", "SC");
+    break;
+    //set "EN" for default language
+    default: localStorage.setItem("stored_lang", "EN");
+    //force refresh
+    location.reload();
+    break;
+}
 
+  let lang = stored_lang;
 
-  // //if any then translate page accordingly
-  // if (stored_lang != null && stored_lang == valid) {
-  //   //  set the current language to selected language
-  //   lang = stored_lang;
-    
-  // } else  {
-  //   //  set english to default language
-  //   localStorage.setItem("stored_lang", "EN");
-  // }
-
-
-  //if any then translate page accordingly
-  if (stored_lang != null && stored_lang != undefined) {
-    //  set the current language to selected language
-    lang = stored_lang;
-    
-  } else  {
-    //  set english to default language
-    localStorage.setItem("stored_lang", "EN");
-  }
-  
-
-
-  
   translateLang(lang);
 
   $('.translate').click(function() {
