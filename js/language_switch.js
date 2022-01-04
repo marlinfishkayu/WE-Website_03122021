@@ -1,13 +1,16 @@
+
+
 $(function() {
   $('.translate').click(function() {
+      
       var lang = $(this).attr('id');
-
+      
       $('.lang').each(function(index, item) {
           $(this).text(arrLang[lang][$(this).attr('key')]);
-
+          
           //Change placeholder
           $(this).prop('placeholder', arrLang[lang][$(this).attr('key')]);
-
+          
       });
 
   });
@@ -15,7 +18,7 @@ $(function() {
 
 function translateLang(lang) {
   $('.lang').each(function(index, item) {
-
+      
       var item = $(this);
       //Change text
       item.text(arrLang[lang][item.attr('key')]);
@@ -29,6 +32,7 @@ function translateLang(lang) {
   html.setAttribute('lang', 'en');
   html.removeAttribute('lang');
   html.setAttribute('lang', lang);
+  
 
 
 
@@ -42,6 +46,7 @@ function translateLang(lang) {
 }
 
 $(function() {
+  
   let stored_lang = localStorage.getItem('stored_lang');
   //check current language 
   switch (stored_lang){
@@ -63,6 +68,7 @@ $(function() {
   translateLang(lang);
 
   $('.translate').click(function() {
+    
       var lang = $(this).attr('id');
       //on click store language to localStorage
       localStorage.setItem("stored_lang", lang);

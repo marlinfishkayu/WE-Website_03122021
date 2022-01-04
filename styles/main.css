@@ -923,9 +923,21 @@ button:focus {
   border: 1px solid #B0936D;
 }
 
-.gametab-game-title {
-  height: 50px;
-  overflow: hidden;
+.game-icon-bkg-wrap {
+  position: relative;
+  z-index: 0;
+}
+
+.game-icon-bkg-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#060B1A), to(rgba(0, 15, 36, 0)));
+  background: linear-gradient(0deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
+  z-index: 1;
 }
 
 .hover .game-icon-front .icon-img {
@@ -1659,7 +1671,20 @@ button:focus {
   width: 123px;
   height: 241px;
   margin-right: 16px;
-  margin-top: 20px;
+  margin-top: -38px;
+}
+
+.sidebar .game-box .game-box-gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 12%;
+  width: 98%;
+  height: 90px;
+  z-index: 0;
+  left: 1px;
+  pointer-events: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#060B1A), to(rgba(0, 15, 36, 0)));
+  background: linear-gradient(0deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
 }
 
 .sidebar .game-box-title {
@@ -1672,6 +1697,7 @@ button:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.sidebar .game-box-gradient,
 .sidebar .game-box-img {
   position: relative;
 }
@@ -1689,6 +1715,8 @@ button:focus {
   width: 123px;
   margin-top: -0.3rem;
   position: absolute;
+  z-index: 1;
+  bottom: 17%;
 }
 
 .sidebar .game-box-h4 h4 {
@@ -1710,9 +1738,14 @@ button:focus {
 .sidebar .viewAllParent {
   background-repeat: no-repeat;
   margin-left: 10px;
-  position: absolute;
-  top: 23%;
+  position: relative;
   cursor: pointer;
+}
+
+.sidebar .viewAllParent .game-box-img {
+  position: absolute;
+  top: 122px;
+  height: 80px;
 }
 
 .sidebar .tabs .tab [type="radio"]:checked ~ .tab-panel {
@@ -1860,6 +1893,10 @@ ul.tab-content {
   .lang-dropdown {
     right: -70px;
   }
+  .game-icon-container .game-icon-sub-title {
+    font-size: 12px;
+    color: #D8D8D8;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1963,6 +2000,19 @@ ul.tab-content {
   .game-menu .sub-tab-content {
     padding-bottom: 280px;
   }
+  .game-icon-container .game-icon-sub-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+#nav-area {
+  height: 700px;
+}
+
+.nav-wrap li.dropdown .game-menu {
+  height: 500px;
+  opacity: 1;
 }
 
 footer {
@@ -2767,10 +2817,9 @@ footer {
 }
 
 #diamondCarousel h5 {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: Futura-pt, Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: #D8D8D8;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -2932,6 +2981,23 @@ footer {
           filter: brightness(0.5) blur(5px) grayscale(0);
 }
 
+#diamondCarousel .diamond-item {
+  position: relative;
+}
+
+#diamondCarousel .diamond-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 230px;
+  bottom: 10%;
+  left: 0;
+  background-color: red;
+  background: -webkit-gradient(linear, left bottom, left top, from(#060B1A), to(rgba(0, 15, 36, 0)));
+  background: linear-gradient(0deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
+  z-index: 1;
+}
+
 #diamondCarousel #diaMahjongLuckyWheel h2,
 #diamondCarousel #diaGodofFortuneSicBo h2,
 #diamondCarousel #diaGodofFortuneSicBo h2 {
@@ -3029,6 +3095,10 @@ footer {
   }
   #diamondCarousel .dia-3d-layer {
     top: 50%;
+  }
+  #diamondCarousel #diaGodofFortuneRoulette .dia-3d-layer,
+  #diamondCarousel #diaLotto5 .dia-3d-layer {
+    top: 49%;
   }
   #diamondCarousel .dia-3d-layer {
     pointer-events: none;
