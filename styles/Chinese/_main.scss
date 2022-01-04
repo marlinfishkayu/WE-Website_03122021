@@ -52,7 +52,9 @@ body:lang(SC)
     #AboutWE .about-h4,
     #news-carousel .update-content .update-event,
     #news-carousel .update-content .update-detail-btn h6,
-    #liveGame .hero-header h1{
+    #liveGame .hero-header h1,
+    .game-platform .game-platforom-icon h6,
+    .main-footer .footer-bottom .footer-TC span{
         font-weight: 500;
     }
     #liveGame #PK10 .hero-icon {
@@ -151,18 +153,19 @@ body:lang(TC)
     .live-game-bottom .game-bottom h4,
     .main-footer .footer-subscribe h6,
     #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2
-    #newsFeed .frame-detail h6 {
+    #newsFeed .frame-detail h6,
+    .main-footer .footer-bottom .footer-TC span {
         font-weight: 500;
     }
     #liveStudio .hero-header .hero-intro1, .hero-header .hero-intro2,
     #liveStudio .livestudio-hightlight-wrap .large-text h1,
-    #liveStudio .livestudio-hightlight-wrap .large-text h6,
-    .main-footer .footer-bottom .footer-TC span{
+    #liveStudio .livestudio-hightlight-wrap .large-text h6{
         font-weight: 300;
     }
     .game-platform .game-platforom-icon h6{
         font-weight: 100;
     }
+    
 }
 body:lang(SC)
 {
@@ -212,10 +215,7 @@ body:lang(SC)
     #liveStudio .livestudio-hightlight-wrap .large-text h6{
         font-weight: 300;
     }
-    .game-platform .game-platforom-icon h6,
-    .main-footer .footer-bottom .footer-TC span{
-        font-weight: 100;
-    }
+    
 }
 body:lang(EN)
 {

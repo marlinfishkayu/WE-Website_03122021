@@ -499,7 +499,7 @@
         transform: rotate(180deg);
     }
     .gal-img {
-        padding: 21px 60px;
+        padding: 16px 31px;
         width: 100%;
     }
     .owl-item{
@@ -516,8 +516,8 @@ svg.gal-frame {
 }
 #sync1.owl-theme .owl-next, 
 #sync1.owl-theme .owl-prev {
-    height: 50px!important;
-    width: 50px!important;
+    height: 35px!important;
+    width: 35px!important;
 }
 
 #sync1.owl-theme .owl-next:hover, 
@@ -599,16 +599,16 @@ svg.gal-frame {
       top: 50%;
     }
     .owl-prev {
-      left: 10px;
+      left: 5px;
     }
     .owl-next {
-      right: 10px;
+      right: 5px;
     }
   }
 // iPhone 13
 @media (min-width: 642px) {
     #sync1 .gal-img {
-        padding: 21px 60px;
+        padding: 16px 32px;
         margin: inherit;
     }
     #sync2.owl-carousel .owl-item img {

@@ -1,4 +1,8 @@
-
+$(function() {
+  $('.language-tap').click(function() {
+    location.reload();
+  })
+})
 
 $(function() {
   $('.translate').click(function() {
@@ -22,6 +26,7 @@ function translateLang(lang) {
       var item = $(this);
       //Change text
       item.text(arrLang[lang][item.attr('key')]);
+      
       //Change placeholder
       item.prop('placeholder', arrLang[lang][item.attr('key')]);
 

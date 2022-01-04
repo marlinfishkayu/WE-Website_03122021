@@ -14,13 +14,28 @@
 .hero-header::after{
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
     background: rgb(6,11,26);
-    background: linear-gradient(180deg, rgba(6,11,26,0.3) 0%, rgba(7,10,27,1) 100%);
+    background: linear-gradient(180deg, rgba(6,11,26,0) 0%, rgba(7,10,27,1) 100%);
+}
+.hero-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 15%;
+    background: rgb(6,11,26);
+    background: linear-gradient(0deg, rgba(6,11,26,0) 0%, rgba(7,10,27,1) 100%);
+
+}
+#liveGame .hero-header::after{
+    height: 70%;
 }
 .game-hero-M,
 .game-hero-D{
@@ -408,14 +423,14 @@
 #MahjongLuckyWheel .hero-header::after , 
 #GodofFortuneSicBo .hero-header::after , 
 #GodofFortuneRoulette .hero-header::after{
-    bottom: -1px;
+    bottom: 0;
     top: inherit;
 }
 
-#GodofFortuneSicBo .hero-header::after,
-#GodofFortuneRoulette .hero-header::after {
-    bottom: 115px;
-}
+// #GodofFortuneSicBo .hero-header::after,
+// #GodofFortuneRoulette .hero-header::after {
+//     bottom: 115px;
+// }
 #GOFfooter{
     margin-top: -6rem;
 }
@@ -454,7 +469,7 @@
     #GodofFortuneSicBo .hero-header::after,
     #GodofFortuneRoulette .hero-header::after {
         position: absolute;
-        top: -90px;
+        // top: -90px;
     }
     #liveGame .hero-intro1 {
         padding: 0 2rem;
@@ -469,10 +484,10 @@
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-    #GodofFortuneSicBo .hero-header::after,
-    #GodofFortuneRoulette .hero-header::after {
-        top: -97px;
-    }
+    // #GodofFortuneSicBo .hero-header::after,
+    // #GodofFortuneRoulette .hero-header::after {
+    //     top: -97px;
+    // }
     .hero-header,
     .live-game-main{
         padding-bottom: 5rem;
@@ -488,6 +503,9 @@
 @media (min-width: 768px) {
     .hero-header {
         height: 700px;
+    }
+    #liveGame .hero-header::after{
+        height: 10%;
     }
     #GodofFortuneRoulette .hero-header-bkg{
         top: -18px;
@@ -540,10 +558,10 @@
     .bottom-container{
         margin-bottom: 0rem;
     }
-    #GodofFortuneSicBo .hero-header::after,
-    #GodofFortuneRoulette .hero-header::after {
-        top: 1px;
-    }
+    // #GodofFortuneSicBo .hero-header::after,
+    // #GodofFortuneRoulette .hero-header::after {
+    //     top: 1px;
+    // }
     .blockchain .hero-header .BC-series,
     #MahjongLuckyWheel .hero-header .GOF-series , 
     #GodofFortuneSicBo .hero-header .GOF-series , 

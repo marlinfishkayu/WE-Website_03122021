@@ -8,8 +8,20 @@
   text-decoration: none;
 }
 #nav-area{
+	position: relative;
+	z-index: 0;
 	background-color: linear-gradient(180deg ,rgba(6, 11, 26, 0.3) 0%, #070a1b 100%);
 }
+// #nav-area::after{
+// 	content: "";
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100px;
+// 	background: linear-gradient(0deg, rgba(6, 11, 26, 0) 0%, #070a1b 100%);
+// 	z-index: -1;
+// }
 #wrapper{
 	position: relative;
 }
@@ -372,7 +384,7 @@
 	transform: translateY(0px);
 	pointer-events: inherit;
 }	
- .language-tap.active{
+.language-tap.active{
 	position: relative;
 }
 #wrapper .nav_links .active-tap{
@@ -726,7 +738,7 @@
 	.game-box .game-box-gradient::after {
 		content: "";
 		position: absolute;
-		bottom: 12%;
+		bottom: 11.5%;
 		width: 98%;
 		height: 90px;
 		z-index: 0;
@@ -1043,10 +1055,10 @@ ul.tab-content {
 
 
 //game menu fixed
-#nav-area {
-	height: 700px;
-}
-.nav-wrap li.dropdown .game-menu {
-	height: 500px;
-	opacity: 1;
-}
+// #nav-area {
+// 	height: 700px;
+// }
+// .nav-wrap li.dropdown .game-menu {
+// 	height: 500px;
+// 	opacity: 1;
+// }

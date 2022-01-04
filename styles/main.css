@@ -799,6 +799,8 @@ button:focus {
 }
 
 #nav-area {
+  position: relative;
+  z-index: 0;
   background-color: linear-gradient(180deg, rgba(6, 11, 26, 0.3) 0%, #070a1b 100%);
 }
 
@@ -1677,7 +1679,7 @@ button:focus {
 .sidebar .game-box .game-box-gradient::after {
   content: "";
   position: absolute;
-  bottom: 12%;
+  bottom: 11.5%;
   width: 98%;
   height: 90px;
   z-index: 0;
@@ -2004,15 +2006,6 @@ ul.tab-content {
     font-size: 18px;
     line-height: 25px;
   }
-}
-
-#nav-area {
-  height: 700px;
-}
-
-.nav-wrap li.dropdown .game-menu {
-  height: 500px;
-  opacity: 1;
 }
 
 footer {
@@ -3886,14 +3879,31 @@ footer {
 .hero-header::after {
   content: '';
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
   background: #060b1a;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 11, 26, 0.3)), to(#070a1b));
-  background: linear-gradient(180deg, rgba(6, 11, 26, 0.3) 0%, #070a1b 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 11, 26, 0)), to(#070a1b));
+  background: linear-gradient(180deg, rgba(6, 11, 26, 0) 0%, #070a1b 100%);
+}
+
+.hero-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 15%;
+  background: #060b1a;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(6, 11, 26, 0)), to(#070a1b));
+  background: linear-gradient(0deg, rgba(6, 11, 26, 0) 0%, #070a1b 100%);
+}
+
+#liveGame .hero-header::after {
+  height: 70%;
 }
 
 .game-hero-M,
@@ -4334,13 +4344,8 @@ footer {
 #MahjongLuckyWheel .hero-header::after,
 #GodofFortuneSicBo .hero-header::after,
 #GodofFortuneRoulette .hero-header::after {
-  bottom: -1px;
+  bottom: 0;
   top: inherit;
-}
-
-#GodofFortuneSicBo .hero-header::after,
-#GodofFortuneRoulette .hero-header::after {
-  bottom: 115px;
 }
 
 #GOFfooter {
@@ -4379,7 +4384,6 @@ footer {
   #GodofFortuneSicBo .hero-header::after,
   #GodofFortuneRoulette .hero-header::after {
     position: absolute;
-    top: -90px;
   }
   #liveGame .hero-intro1 {
     padding: 0 2rem;
@@ -4394,10 +4398,6 @@ footer {
 }
 
 @media (min-width: 576px) {
-  #GodofFortuneSicBo .hero-header::after,
-  #GodofFortuneRoulette .hero-header::after {
-    top: -97px;
-  }
   .hero-header,
   .live-game-main {
     padding-bottom: 5rem;
@@ -4413,6 +4413,9 @@ footer {
 @media (min-width: 768px) {
   .hero-header {
     height: 700px;
+  }
+  #liveGame .hero-header::after {
+    height: 10%;
   }
   #GodofFortuneRoulette .hero-header-bkg {
     top: -18px;
@@ -4462,10 +4465,6 @@ footer {
   }
   .bottom-container {
     margin-bottom: 0rem;
-  }
-  #GodofFortuneSicBo .hero-header::after,
-  #GodofFortuneRoulette .hero-header::after {
-    top: 1px;
   }
   .blockchain .hero-header .BC-series,
   #MahjongLuckyWheel .hero-header .GOF-series,
@@ -7319,7 +7318,7 @@ select.form-control::-ms-expand {
 }
 
 #sync1 .gal-img {
-  padding: 21px 60px;
+  padding: 16px 31px;
   width: 100%;
 }
 
@@ -7338,8 +7337,8 @@ svg.gal-frame {
 
 #sync1.owl-theme .owl-next,
 #sync1.owl-theme .owl-prev {
-  height: 50px !important;
-  width: 50px !important;
+  height: 35px !important;
+  width: 35px !important;
 }
 
 #sync1.owl-theme .owl-next:hover,
@@ -7429,16 +7428,16 @@ svg.gal-frame {
 }
 
 #sync1.owl-theme .owl-prev {
-  left: 10px;
+  left: 5px;
 }
 
 #sync1.owl-theme .owl-next {
-  right: 10px;
+  right: 5px;
 }
 
 @media (min-width: 642px) {
   #sync1 .gal-img {
-    padding: 21px 60px;
+    padding: 16px 32px;
     margin: inherit;
   }
   #sync2.owl-carousel .owl-item img {
@@ -10228,6 +10227,8 @@ body:lang(TC) #AboutWE .about-h4,
 body:lang(TC) #news-carousel .update-content .update-event,
 body:lang(TC) #news-carousel .update-content .update-detail-btn h6,
 body:lang(TC) #liveGame .hero-header h1,
+body:lang(TC) .game-platform .game-platforom-icon h6,
+body:lang(TC) .main-footer .footer-bottom .footer-TC span,
 body:lang(SC) #NewsDetail .hero-title,
 body:lang(SC) #newsFeed .frame-detail .frame-date,
 body:lang(SC) .gametab-game-title h4,
@@ -10245,7 +10246,9 @@ body:lang(SC) .game-icon-wrap h4,
 body:lang(SC) #AboutWE .about-h4,
 body:lang(SC) #news-carousel .update-content .update-event,
 body:lang(SC) #news-carousel .update-content .update-detail-btn h6,
-body:lang(SC) #liveGame .hero-header h1 {
+body:lang(SC) #liveGame .hero-header h1,
+body:lang(SC) .game-platform .game-platforom-icon h6,
+body:lang(SC) .main-footer .footer-bottom .footer-TC span {
   font-weight: 500;
 }
 
@@ -10367,14 +10370,14 @@ body:lang(TC) .secondaryBtn,
 body:lang(TC) .live-game-bottom .game-bottom h4,
 body:lang(TC) .main-footer .footer-subscribe h6,
 body:lang(TC) #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2
-#newsFeed .frame-detail h6 {
+#newsFeed .frame-detail h6,
+body:lang(TC) .main-footer .footer-bottom .footer-TC span {
   font-weight: 500;
 }
 
 body:lang(TC) #liveStudio .hero-header .hero-intro1, body:lang(TC) .hero-header .hero-intro2,
 body:lang(TC) #liveStudio .livestudio-hightlight-wrap .large-text h1,
-body:lang(TC) #liveStudio .livestudio-hightlight-wrap .large-text h6,
-body:lang(TC) .main-footer .footer-bottom .footer-TC span {
+body:lang(TC) #liveStudio .livestudio-hightlight-wrap .large-text h6 {
   font-weight: 300;
 }
 
@@ -10431,11 +10434,6 @@ body:lang(SC) #liveStudio .hero-header .hero-intro1, body:lang(SC) .hero-header 
 body:lang(SC) #liveStudio .livestudio-hightlight-wrap .large-text h1,
 body:lang(SC) #liveStudio .livestudio-hightlight-wrap .large-text h6 {
   font-weight: 300;
-}
-
-body:lang(SC) .game-platform .game-platforom-icon h6,
-body:lang(SC) .main-footer .footer-bottom .footer-TC span {
-  font-weight: 100;
 }
 
 body:lang(EN) #ContactUs .hyperlink {
@@ -10744,6 +10742,11 @@ body:lang(TC) #liveStudio .livestudio-sec3 .bottom-deco:before, body:lang(TC) #l
 body:lang(SC) #liveStudio .livestudio-sec3 .bottom-deco:before,
 body:lang(SC) #liveStudio .livestudio-sec3 .bottom-deco:after {
   top: 37%;
+}
+
+body:lang(TC) #liveStudio .livestudio-hightlight-wrap .large-text h1,
+body:lang(SC) #liveStudio .livestudio-hightlight-wrap .large-text h1 {
+  padding-top: 3.7rem;
 }
 
 @media (min-width: 768px) {
