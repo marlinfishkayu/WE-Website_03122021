@@ -726,7 +726,7 @@
 	.game-box .game-box-gradient::after {
 		content: "";
 		position: absolute;
-		bottom: 11.5%;
+		bottom: 12%;
 		width: 98%;
 		height: 90px;
 		z-index: 0;
@@ -1043,10 +1043,10 @@ ul.tab-content {
 
 
 //game menu fixed
-// #nav-area {
-// 	height: 700px;
-// }
-// .nav-wrap li.dropdown .game-menu {
-// 	height: 500px;
-// 	opacity: 1;
-// }
+#nav-area {
+	height: 700px;
+}
+.nav-wrap li.dropdown .game-menu {
+	height: 500px;
+	opacity: 1;
+}
