@@ -2006,15 +2006,6 @@ ul.tab-content {
   }
 }
 
-#nav-area {
-  height: 700px;
-}
-
-.nav-wrap li.dropdown .game-menu {
-  height: 500px;
-  opacity: 1;
-}
-
 footer {
   background-color: #000000;
   position: relative;
