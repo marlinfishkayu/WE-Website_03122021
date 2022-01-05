@@ -1,10 +1,14 @@
-$(function() {
-  $('.language-tap').click(function() {
-    location.reload();
-  })
-})
+// function confirmRefresh() {
+//   var okToRefresh = confirm("Do you really want to refresh the page?");
+//   if (okToRefresh)
+//     {
+      
+//       setTimeout("switchLanguage();",5000);
+//       location.reload();
+//     }
+//   }
 
-$(function() {
+function switchLanguage() {
   $('.translate').click(function() {
       
       var lang = $(this).attr('id');
@@ -18,7 +22,7 @@ $(function() {
       });
 
   });
-});
+};
 
 function translateLang(lang) {
   $('.lang').each(function(index, item) {
@@ -32,6 +36,7 @@ function translateLang(lang) {
 
 
   });
+  
   // swicth language for css，re-define language
   var html = document.documentElement;
   html.setAttribute('lang', 'en');
@@ -73,13 +78,25 @@ $(function() {
   translateLang(lang);
 
   $('.translate').click(function() {
-    
+      
       var lang = $(this).attr('id');
       //on click store language to localStorage
       localStorage.setItem("stored_lang", lang);
-      translateLang(lang);
-
+      // translateLang(lang);
+      
 
   });
 
 });
+
+
+
+// Refresh page after selecting other language
+$(function() {
+
+  $('.language-tap').click(function() {
+    location.reload();
+    setTimeout("translateLang(lang);",3000);
+  })
+
+})

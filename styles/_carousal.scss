@@ -684,9 +684,11 @@
     #diamondCarousel .dia-3d-layer {
         top: 50%;
     }
-    #diamondCarousel #diaGodofFortuneRoulette .dia-3d-layer ,
-    #diamondCarousel #diaLotto5 .dia-3d-layer {
+    #diamondCarousel #diaGodofFortuneRoulette .dia-3d-layer {
         top: 49%;
+    }
+    #diamondCarousel #diaLotto5 .dia-3d-layer {
+        top: 49.5%;
     }
     #diamondCarousel .dia-3d-layer {
         pointer-events: none;

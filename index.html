@@ -56,7 +56,7 @@
             <section class="section-header" id="nav">
                 <div class="header-wrapper">
                     <!-- navigation bar -->
-                    <div class="nav-wrap"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.3s; --sal-delay: 0.8s;">
+                    <div class="nav-wrap" >
                         <div id="nav-area">
                             <div class="main-nav">
                                 <!-- nav links -->
@@ -292,9 +292,9 @@
                                                 <!-- <h6 class="lang" key="current-lang"></h6> -->
                                             </button>
                                             <ul class="lang-dropdown" id="languageDropdown">
-                                                <a id="EN" href="#" class="translate"><li class="language-tap active">English</li></a>
-                                                <a id="TC" href="#" class="translate"><li class="language-tap">繁體中文</li></a>
-                                                <a id="SC" href="#" class="translate"><li class="language-tap">简体中文</li></a>
+                                                <a id="EN"  class="translate" href="javascript:confirmRefresh();"><li class="language-tap active">English</li></a>
+                                                <a id="TC"  class="translate" href="javascript:confirmRefresh();"><li class="language-tap">繁體中文</li></a>
+                                                <a id="SC"  class="translate" href="javascript:confirmRefresh();"><li class="language-tap">简体中文</li></a>
                                             </ul>
                                         </div>
                                     </div>
@@ -555,6 +555,7 @@
                                                                         <div  class="game-box-h4">
                                                                             <h4 class="lang" key="BC_MahjongLuckyWheel_1"></h4>
                                                                             <h4 class="lang" key="BC_MahjongLuckyWheel_2"></h4>
+                                                                            <h4 class="lang" key="BC_MahjongLuckyWheel_3"></h4>
                                                                         </div>
                                                                     </a>
                                                                 </div>
@@ -748,7 +749,7 @@
                                         srcset="./images/index/index_ourGames_col1_livegame_x1.png 800w, ./images/index/index_ourGames_col1_livegame_x2.png 1000w">
                                     </picture>
                                 </div>
-                                <a href="All_Live_Game.html" class="expand-deco">
+                                <a href="All_Live_Game.html" class="expand-deco" id="col2LiveGames">
                                     <div class="expand-icon">
                                         <img loading="lazy" class="imageset" data-key="col_1"/>
                                     </div>
